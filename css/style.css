@@ -609,6 +609,7 @@ section#aboutme > .workstyle > .container > ol {
   top: 15px;
   width: 560px;
   height: 105px;
+  line-height: 15px;
 }
 
 @media screen and (max-width: 640px) {
@@ -645,8 +646,8 @@ section#aboutme > .workstyle > .container > ol:before {
 }
 
 section#aboutme > .workstyle > .container > ol:after {
-  left: 60%;
-  top: 60px;
+  left: 65%;
+  top: 20px;
   letter-spacing: 0.1em;
   content: '코딩 스타일을 좋아합니다!';
 }
@@ -1233,8 +1234,9 @@ section#ability > .resume > div > .iam > .shadow > .clse {
   left: 50%;
   top: 50%;
   margin: 370px 0 0 410px;
-  background-color: #735F46;
-  border: 1px solid #222;
+  color: #735F46;
+  border: 1px solid #735F46;
+  border-radius: 3px;
 }
 
 section#uxdesign {
@@ -2016,6 +2018,8 @@ section#portfolio > .slides > .slides-container > figure > figcaption > .shadow 
   left: 50%;
   top: 50%;
   margin: 370px 0 0 410px;
+  color: #735F46;
+  border: 1px solid #735F46;
 }
 
 section#portfolio > .slides > .slides-container > figure > .frame {
@@ -2170,124 +2174,6 @@ section#portfolio > .intro .container > p > strong {
   font-weight: 400;
 }
 
-section#portfolio > .intro .container > .coding > h4 {
-  overflow: hidden;
-  position: relative;
-  height: 300px;
-  margin-bottom: 104px;
-}
-
-@media screen and (max-width: 640px) {
-  section#portfolio > .intro .container > .coding > h4 {
-    width: 90%;
-    margin: 0 auto 50px;
-    text-align: center;
-  }
-}
-
-section#portfolio > .intro .container > .coding > h4 > span {
-  position: absolute;
-  left: 240px;
-  bottom: 0;
-}
-
-@media screen and (max-width: 640px) {
-  section#portfolio > .intro .container > .coding > h4 > span {
-    left: 0;
-    bottom: -30px;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-section#portfolio > .intro .container > .coding > h4:after {
-  display: block;
-  position: absolute;
-  right: 35px;
-  bottom: 0;
-  z-index: -1;
-  width: 470px;
-  height: 300px;
-  background-image: url(./../images/portfolio/code01.png);
-  content: '';
-}
-
-@media screen and (max-width: 640px) {
-  section#portfolio > .intro .container > .coding > h4:after {
-    width: 100%;
-    right: 50%;
-    margin-right: -50%;
-  }
-}
-
-section#portfolio > .intro .container > .coding > h4 > .circle {
-  position: absolute;
-  left: 95%;
-  bottom: 0px;
-}
-
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring {
-  position: absolute;
-  border: 2px solid #52b3d9;
-  border-radius: 200px;
-}
-
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring.ring_1 {
-  left: 0;
-  top: 0px;
-  width: 45px;
-  height: 45px;
-  opacity: 0.7;
-}
-
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring.ring_2 {
-  left: -16px;
-  top: -16px;
-  width: 77px;
-  height: 77px;
-  opacity: 0.6;
-}
-
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring.ring_3 {
-  left: -32px;
-  top: -32px;
-  width: 109px;
-  height: 109px;
-  opacity: 0.5;
-}
-
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring.ring_4 {
-  left: -48px;
-  top: -48px;
-  width: 141px;
-  height: 141px;
-  opacity: 0.4;
-}
-
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring.ring_5 {
-  left: -64px;
-  top: -64px;
-  width: 173px;
-  height: 173px;
-  opacity: 0.3;
-}
-
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring.ring_6 {
-  left: -80px;
-  top: -80px;
-  width: 205px;
-  height: 205px;
-  opacity: 0.2;
-}
-
-section#portfolio > .intro .container > .coding > h4 > .circle > .ring.ring_7 {
-  left: -96px;
-  top: -96px;
-  width: 237px;
-  height: 237px;
-  opacity: 0.1;
-}
-
 section#portfolio > .intro .container > .coding > div {
   position: relative;
   height: 436px;
@@ -2309,13 +2195,13 @@ section#portfolio > .intro .container > .coding > div {
   }
 }
 
-section#portfolio > .intro .container > .coding > div > h4 {
+section#portfolio > .intro .container > .coding > div > h3 {
   padding: 30px 0;
   font-size: 32px;
 }
 
 @media screen and (max-width: 640px) {
-  section#portfolio > .intro .container > .coding > div > h4 {
+  section#portfolio > .intro .container > .coding > div > h3 {
     padding: 0 0 30px 0;
     font-weight: 500;
     font-size: 20px;

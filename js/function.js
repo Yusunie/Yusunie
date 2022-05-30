@@ -238,9 +238,9 @@ $(function(){
         // 보여줄 슬라이드에 대한 인덱스번호 추출
       if(nowIdx>=1) {
         nowIdx--;
-  	  }else{     
-      nowIdx=3;
-   	 };
+				}else{     
+					nowIdx=3;
+				};
 
       const $slides = $('.slides-container>li');//li 4개
 
