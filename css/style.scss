@@ -395,8 +395,10 @@ section#aboutme{
           border-bottom: 1px solid #eee;
           border-radius: 0 0 10px 10px;
           content: '';
+          
         }
 
+        
         >.myphoto{
           overflow: hidden;
           background-image: url(./../images/aboutme/photo-frame.png);
@@ -404,12 +406,15 @@ section#aboutme{
           background-size: contain;
           background-repeat: no-repeat;
 
+          @media #{$mobile}{
+            width: 95%;
+          }
+
           >img{
             display: block;
             position: relative;
             z-index: -1;//-1값 설정시 가장 아래 바닥으로 깔린다.
             margin-left: -130px;
-
           }
         }//end of .myphoto
 
@@ -567,7 +572,6 @@ section#aboutme{
           top: 20px;
           letter-spacing: 0.1em;
           content: '하는';
-
         }
 
         &:after{
@@ -575,10 +579,6 @@ section#aboutme{
           top: 20px;
           letter-spacing: 0.1em;
           content: '코딩 스타일을 좋아합니다!';
-
-          @media #{$mobile}{
-            display: none;
-          }
         }
 
         > li {
@@ -757,6 +757,12 @@ section#skill{
         padding-bottom: 40px;
         border: 1px solid #eee;
       }
+      h4,
+      p{
+        @media #{$mobile}{
+          margin-left: 130px;
+        }
+      }
     }
 
     &.skill-2{
@@ -840,6 +846,9 @@ section#skill{
 
     &.skill-1 li:last-child {
       background-image: url(./../images/skill/skill02.png);
+      @media #{$mobile}{
+        padding-left: 180px;
+      }
     }
 
     &.skill-2 li:first-child {
@@ -848,7 +857,7 @@ section#skill{
       background-position: 70px 0;
       
       @media #{$mobile}{
-        padding-left: 180px;
+        padding-left: 300px;
         background-position: 0 0;
       }
     }
@@ -2375,6 +2384,7 @@ footer{
       >p.iam_2>span{
         @media #{$mobile}{
           display: block;
+          margin-top: 10px;
         }
       }
     }//end of .container

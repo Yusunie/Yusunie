@@ -464,6 +464,12 @@ section#aboutme > .container > .profile > div > .myphoto {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 640px) {
+  section#aboutme > .container > .profile > div > .myphoto {
+    width: 95%;
+  }
+}
+
 section#aboutme > .container > .profile > div > .myphoto > img {
   display: block;
   position: relative;
@@ -652,12 +658,6 @@ section#aboutme > .workstyle > .container > ol:after {
   content: '코딩 스타일을 좋아합니다!';
 }
 
-@media screen and (max-width: 640px) {
-  section#aboutme > .workstyle > .container > ol:after {
-    display: none;
-  }
-}
-
 section#aboutme > .workstyle > .container > ol > li {
   color: #fff;
   font-weight: 400;
@@ -840,6 +840,13 @@ section#skill > article.skill-1 {
 }
 
 @media screen and (max-width: 640px) {
+  section#skill > article.skill-1 h4,
+  section#skill > article.skill-1 p {
+    margin-left: 130px;
+  }
+}
+
+@media screen and (max-width: 640px) {
   section#skill > article.skill-2 {
     padding-top: 40px;
   }
@@ -940,6 +947,12 @@ section#skill > article.skill-1 li:last-child {
   background-image: url(./../images/skill/skill02.png);
 }
 
+@media screen and (max-width: 640px) {
+  section#skill > article.skill-1 li:last-child {
+    padding-left: 180px;
+  }
+}
+
 section#skill > article.skill-2 li:first-child {
   padding-left: 360px;
   background-image: url(./../images/skill/skill03.jpg);
@@ -948,7 +961,7 @@ section#skill > article.skill-2 li:first-child {
 
 @media screen and (max-width: 640px) {
   section#skill > article.skill-2 li:first-child {
-    padding-left: 180px;
+    padding-left: 300px;
     background-position: 0 0;
   }
 }
@@ -2688,6 +2701,7 @@ footer > .info > .container > h2:after {
 @media screen and (max-width: 640px) {
   footer > .info > .container > p.iam_2 > span {
     display: block;
+    margin-top: 10px;
   }
 }
 
