@@ -475,7 +475,7 @@ section#aboutme > .container > .profile > div > .myphoto > img {
 
 @media screen and (max-width: 640px) {
   section#aboutme > .container > .profile > div > .myphoto > img {
-    margin-left: -500px;
+    margin-left: -600px;
   }
 }
 
@@ -2722,6 +2722,12 @@ aside > a {
   line-height: 28px;
   text-align: center;
   background-color: #68C3A3;
+}
+
+@media screen and (max-width: 640px) {
+  aside > a {
+    border: 1px solid #fff;
+  }
 }
 
 aside > a > i {

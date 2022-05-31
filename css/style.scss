@@ -416,7 +416,7 @@ section#aboutme{
             margin-left: -670px;
 
             @media #{$mobile}{
-              margin-left: -500px;
+              margin-left: -600px;
             }
           }
         }//end of .myphoto
@@ -2409,6 +2409,9 @@ aside{
     line-height: 28px;
     text-align: center;
     background-color: $sec-color;
+    @media #{$mobile}{
+      border: 1px solid #fff;
+    }
 
     >i{
       color: #fff;
