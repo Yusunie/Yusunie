@@ -406,15 +406,18 @@ section#aboutme{
           background-size: contain;
           background-repeat: no-repeat;
 
-          @media #{$mobile}{
-            width: 95%;
-          }
-
+          
           >img{
             display: block;
             position: relative;
             z-index: -1;//-1값 설정시 가장 아래 바닥으로 깔린다.
-            margin-left: -130px;
+            height: 600px;
+            margin-bottom: -50px;
+            margin-left: -670px;
+
+            @media #{$mobile}{
+              margin-left: -500px;
+            }
           }
         }//end of .myphoto
 
@@ -1015,7 +1018,7 @@ section#ability{
       > .frame {
         display: block;
         width: 520px;
-        height: 340px;
+        height: 354px;
         margin-right: 50px;
         border: 1px solid #000;
 
@@ -2312,6 +2315,7 @@ section#contact{
         background-image: none;
         box-sizing: border-box;
       }
+      
     }//end of p
   }//end of .apply
 }//end of #contact

@@ -464,17 +464,19 @@ section#aboutme > .container > .profile > div > .myphoto {
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 640px) {
-  section#aboutme > .container > .profile > div > .myphoto {
-    width: 95%;
-  }
-}
-
 section#aboutme > .container > .profile > div > .myphoto > img {
   display: block;
   position: relative;
   z-index: -1;
-  margin-left: -130px;
+  height: 600px;
+  margin-bottom: -50px;
+  margin-left: -670px;
+}
+
+@media screen and (max-width: 640px) {
+  section#aboutme > .container > .profile > div > .myphoto > img {
+    margin-left: -500px;
+  }
 }
 
 section#aboutme > .container > .profile > div > ol {
@@ -1144,7 +1146,7 @@ section#ability > .resume > div {
 section#ability > .resume > div > .frame {
   display: block;
   width: 520px;
-  height: 340px;
+  height: 354px;
   margin-right: 50px;
   border: 1px solid #000;
 }
